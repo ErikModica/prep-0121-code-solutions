@@ -11,7 +11,6 @@
 </head>
 
 <body>
-  <h1>Hello World!</h1>
   <div id="container">
 
   </div>
@@ -19,12 +18,12 @@
     var container = document.querySelector('div#container');
     console.log(container);
 
-    var h1Element = document.querySelector('h1');
+    var h1Element = document.createElement('h1');
     console.log(h1Element);
 
+    h1Element.textContent = 'Hello World!';
+
     container.appendChild(h1Element);
-
-
   </script>
 </body>
 
